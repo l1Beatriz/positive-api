@@ -63,7 +63,7 @@ Inicie o servidor
   PUT /frase/atualizar/:id
 ```
 
-#### Adiciona uma frase por ID
+#### Deleta uma frase por ID
 
 ```
   DELETE /frase/deletar/:id
