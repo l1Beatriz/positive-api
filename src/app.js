@@ -2,7 +2,6 @@ import express from "express";
 import connectDataBase from "./config/configDataBase.js";
 import routes from "./routes/index.js";
   
-
 const connection = await connectDataBase();
 
 connection.on("error", (error) => {

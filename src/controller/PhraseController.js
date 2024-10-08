@@ -1,6 +1,5 @@
 import phrases from "../model/PhraseModel.js";
 
-
 class PhraseController {
 
     static async index(req, res) {

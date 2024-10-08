@@ -1,7 +1,6 @@
 import express from "express";
 import PhraseController from "../controller/PhraseController.js";
 
-
 const router = express.Router();
 
 router.get("/", PhraseController.index);

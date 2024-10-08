@@ -1,12 +1,13 @@
 import express from "express";
 import phrase from "./phraseRouter.js";
+import cors from "cors";
 
 const routes = (app) => {
-    app.route("/", (req, res) => {
-        res.status(200).send({message: "PositiveAPI"})
-    })
-
-    app.use(express.json(), phrase);
+    app.use(
+        express.json(),
+        cors(), 
+        phrase
+    );
 }
 
 export default routes;
