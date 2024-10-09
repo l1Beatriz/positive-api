@@ -12,13 +12,25 @@ class PhraseController {
         }
     }
     
-    static async findPhrase(req, res) {
+    static async findPhrases(req, res) {
         try {
             const resultPhrase = await phrases.find();
             res.status(200).json(resultPhrase);
         } catch(error) {
             res.status(500).json({
                 message: `${error.message} - falha na requisição`
+            })
+        }
+    }
+
+    static async findPhraseById(req, res) {
+        try {
+            const id = req.params.id;
+            const phraseFound = await phrases.findById(id);
+            res.status(200).json(phraseFound);
+        } catch(error) {
+            res.status(500).json({
+                message: `${error.message} - falha ao encontrar frase`
             })
         }
     }
