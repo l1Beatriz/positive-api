@@ -21,7 +21,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/l1Beatriz/positive-api.git
 ```
 
 Entre no diretório do projeto
